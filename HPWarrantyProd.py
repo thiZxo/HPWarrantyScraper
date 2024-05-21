@@ -29,7 +29,7 @@ import winreg as reg
 # Function to check if the manufacturer is HP
 def is_hp():
     try:
-        reg_key = reg.OpenKey(reg.HKEY_LOCAL_MACHINE, r"SOFTWARE\CIT\Warranty")
+        reg_key = reg.OpenKey(reg.HKEY_LOCAL_MACHINE, r"PATH\TO\YOUR\MANUFACTURER\KEY")
         manufacturer, _ = reg.QueryValueEx(reg_key, "Manufacturer")
         reg.CloseKey(reg_key)
         return 'hp' in manufacturer.lower()
