@@ -4,7 +4,7 @@ TO COMPILE:
 
 You'll need python installed on your machine. Once installed, use:
 
-pyinstaller --onefile --windowed PATH\TO\YOUR\.PY
+pyinstaller --onefile --window PATH\TO\YOUR\.PY
 
 to create the .exe
 
